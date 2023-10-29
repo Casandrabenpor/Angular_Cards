@@ -1,0 +1,22 @@
+nav {
+    color: var(--color-3);
+    padding: 2em;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2em;
+        list-style: none;
+    }
+
+    a {
+        color: var(--color-4);
+        text-decoration: none;
+        list-style: none;
+        font-family: var(--font-family-1);
+        font-size: 30px;
+    }
+
+
+}

@@ -1,0 +1,11 @@
+<h1>Favorites</h1>
+<form class="search-form">
+  <input type="text" class="search" placeholder="Search" (input)="searchProduct($event)" #searchbar />
+  <button class="search-button">🔎</button>
+</form>
+<div class="card-collection">
+  <!-- <app-favorite-cart></app-favorite-cart> -->
+  <app-favorite-cart (itemRemoved)="refresh()" [product]="favorite" *ngFor="let favorite of favoritesToShow" />
+  <!-- <div>{{ product.title }}</div>  -->
+  <!-- </app-favorite-cart> -->
+</div>

@@ -1,0 +1,29 @@
+<h1>HOME</h1>
+<form class="search-form">
+  <input
+    type="text"
+    class="search"
+    (input)="searchProduct($event)"
+    placeholder="Search"
+  />
+  <button class="search-button">🔎</button>
+</form>
+<div class="button_create">
+  <button><a routerLink="/createProducts">Create Products </a></button>
+</div>
+<div class="card-collection">
+  <app-products [product]="product" *ngFor="let product of productsToShow">
+    <div>{{ product.title }}</div>
+  </app-products>
+</div>
+
+<!-- <mat-paginatord
+  [length]="100"
+  [pageSize]="10"
+  [pageSizeOptions]="[5, 10, 25, 100]"
+  aria-label="Select page"
+>
+</mat-paginator> -->
+
+<!-- https://stackblitz.com/edit/angular-2liy7w?file=app%2Fpaginator-configurable-example.ts -->
+<button (click)="toggleLiveDemo()" Button>Launch demo modal</button>

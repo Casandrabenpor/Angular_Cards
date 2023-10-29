@@ -1,0 +1,7 @@
+{
+  "title": "New Product 3",
+  "price": 5,
+  "description": "A description",
+  "categoryId": 5,
+  "images": ["https://placeimg.com/640/480/any"]
+}

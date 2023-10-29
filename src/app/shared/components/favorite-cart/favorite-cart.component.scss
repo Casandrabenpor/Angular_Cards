@@ -1,0 +1,24 @@
+.card {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        border: none;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--font-family-1);
+}
+
+p {
+    text-align: center;
+    font-family: var(--font-family-1);
+}

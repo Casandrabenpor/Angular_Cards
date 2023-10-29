@@ -1,0 +1,46 @@
+.card {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--font-family-1);
+}
+
+p {
+    text-align: center;
+    font-family: var(--font-family-1);
+}
+
+.example-button-row button,
+.example-button-row a {
+    margin-right: 8px;
+
+}
+
+.example-disabled {
+    display: inline-block;
+}
+
+.example-button-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    color: white;
+    background-color: black;
+}
+
+.red {
+    color: red;
+    background-color: rgb(241, 195, 195);
+}

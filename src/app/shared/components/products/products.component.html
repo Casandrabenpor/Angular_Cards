@@ -1,0 +1,21 @@
+<ng-container *ngIf="product">
+  <div class="card">
+    <h2>
+      <a [routerLink]="['/products', product.id]">
+        {{ product.title }}
+      </a>
+    </h2>
+    <p>${{ product.price }}</p>
+    <img ng-src="product.images[0]" />
+    <div class="example-button-row">
+      <button mat-fab matTooltip="Warn" color="warn" aria-label="Example fab with a heart icon"
+        (click)="toggleHearthButton()" (click)="RemoveOrAddFavorite(product)" (click)="showSuccess()"
+        [ngClass]="{ white: !toggle, red: toggle }">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!product"><mat-spinner></mat-spinner> producto no renderizado
+</ng-container>

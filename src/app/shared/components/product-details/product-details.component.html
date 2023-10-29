@@ -1,0 +1,15 @@
+<h2>Product Details</h2>
+
+<div class="card_center">
+  <div class="card">
+    <form [formGroup]="formGroup" (ngSubmit)="submit()">
+      <label htmlFor="fname">Title</label>
+      <input type="text" name="title" formControlName="title" />
+      <label htmlFor="fname">Price</label>
+      <input type="text" name="price" formControlName="price" />
+      <label htmlFor="fname">Description</label>
+      <input type="text" name="description" formControlName="description" />
+      <button type="submit" (click)="showSuccess()">Guardar</button>
+    </form>
+  </div>
+</div>
